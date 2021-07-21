@@ -4,12 +4,7 @@ module.exports = {
   globals: {
     'ts-jest': {
       stringifyContentPathRegex: '\\.(html|svg)$',
-      astTransformers: {
-        before: [
-          'jest-preset-angular/build/InlineFilesTransformer',
-          'jest-preset-angular/build/StripStylesTransformer',
-        ],
-      },
+
       tsconfig: '<rootDir>/tsconfig.spec.json',
     },
   },
@@ -21,4 +16,5 @@ module.exports = {
     'jest-preset-angular/build/serializers/ng-snapshot',
     'jest-preset-angular/build/serializers/html-comment',
   ],
+  transform: { '^.+\\.(ts|js|html)$': 'jest-preset-angular' },
 };

@@ -15,23 +15,23 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@test-helpers": ["libs/test-helpers/src/index.ts"],
+      "@rx-angular/cdk": ["libs/cdk/src/index.ts"],
+      "@rx-angular/cdk/coalescing": ["libs/cdk/coalescing/src/index.ts"],
+      "@rx-angular/cdk/coercing": ["libs/cdk/coercing/src/index.ts"],
+      "@rx-angular/cdk/internals/scheduler": [
+        "libs/cdk/internals/scheduler/src/index.ts"
+      ],
+      "@rx-angular/cdk/notifications": ["libs/cdk/notifications/src/index.ts"],
+      "@rx-angular/cdk/zone-configurations": [
+        "libs/cdk/zone-configurations/src/index.ts"
+      ],
+      "@rx-angular/cdk/zone-less": ["libs/cdk/zone-less/src/index.ts"],
       "@rx-angular/state": ["libs/state/src/index.ts"],
       "@rx-angular/template": ["libs/template/src/index.ts"],
       "@rx-angular/template/let": ["libs/template/let/src/index.ts"],
       "@rx-angular/template/push": ["libs/template/push/src/index.ts"],
       "@rx-angular/template/unpatch": ["libs/template/unpatch/src/index.ts"],
-      "@rx-angular/cdk": ["libs/cdk/src/index.ts"],
-      "@rx-angular/cdk/zone-less": ["libs/cdk/zone-less/src/index.ts"],
-      "@rx-angular/cdk/zone-configurations": [
-        "libs/cdk/zone-configurations/src/index.ts"
-      ],
-      "@rx-angular/cdk/internals/scheduler": [
-        "libs/cdk/internals/scheduler/src/index.ts"
-      ],
-      "@rx-angular/cdk/coalescing": ["libs/cdk/coalescing/src/index.ts"],
-      "@rx-angular/cdk/coercing": ["libs/cdk/coercing/src/index.ts"],
-      "@rx-angular/cdk/notifications": ["libs/cdk/notifications/src/index.ts"]
+      "@test-helpers": ["libs/test-helpers/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

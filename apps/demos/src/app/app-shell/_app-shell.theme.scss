@@ -1,4 +1,4 @@
-@import '~@angular/material/theming';
+@use '~@angular/material' as mat;
 
 @mixin app-shell-theme($theme) {
   $primary: map-get($theme, primary);
@@ -6,13 +6,13 @@
   $warn: map-get($theme, warn);
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
-  $headerBg: mat-color($primary);
-  $headerColor: mat-color($primary, default-contrast);
+  $headerBg: mat.get-color-from-palette($primary);
+  $headerColor: mat.get-color-from-palette($primary, default-contrast);
 
   app-side-nav {
     .app-shell-sidenav-item {
       &.active {
-        background-color: mat-color($background, 'hover');
+        background-color: mat.get-color-from-palette($background, 'hover');
       }
     }
   }

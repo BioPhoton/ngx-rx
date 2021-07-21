@@ -20,40 +20,6 @@
     }
   },
   "projects": {
-    "demos": {
-      "tags": ["type:app"]
-    },
-    "demos-e2e": {
-      "tags": [],
-      "implicitDependencies": ["demos"]
-    },
-    "test-helpers": {
-      "tags": ["type:util"]
-    },
-    "cdk-internals-scheduler": {
-      "tags": ["type:lib", "type:cdk", "type:internals"],
-      "implicitDependencies": []
-    },
-    "cdk-zone-less": {
-      "tags": ["type:lib", "type:cdk"],
-      "implicitDependencies": []
-    },
-    "cdk-coalescing": {
-      "tags": ["type:lib", "type:cdk"],
-      "implicitDependencies": []
-    },
-    "cdk-zone-configurations": {
-      "tags": ["type:lib", "type:cdk"],
-      "implicitDependencies": []
-    },
-    "cdk-coercing": {
-      "tags": ["type:lib", "type:cdk"],
-      "implicitDependencies": []
-    },
-    "cdk-notifications": {
-      "tags": ["type:lib", "type:cdk"],
-      "implicitDependencies": ["cdk-coercing"]
-    },
     "cdk": {
       "tags": ["type:lib", "type:cdk"],
       "implicitDependencies": [
@@ -61,6 +27,47 @@
         "cdk-coercing",
         "cdk-zone-less"
       ]
+    },
+    "cdk-coalescing": {
+      "tags": ["type:lib", "type:cdk"],
+      "implicitDependencies": []
+    },
+    "cdk-coercing": {
+      "tags": ["type:lib", "type:cdk"],
+      "implicitDependencies": []
+    },
+    "cdk-internals-scheduler": {
+      "tags": ["type:lib", "type:cdk", "type:internals"],
+      "implicitDependencies": []
+    },
+    "cdk-notifications": {
+      "tags": ["type:lib", "type:cdk"],
+      "implicitDependencies": ["cdk-coercing"]
+    },
+    "cdk-zone-configurations": {
+      "tags": ["type:lib", "type:cdk"],
+      "implicitDependencies": []
+    },
+    "cdk-zone-less": {
+      "tags": ["type:lib", "type:cdk"],
+      "implicitDependencies": []
+    },
+    "demos": {
+      "tags": ["type:app"]
+    },
+    "demos-e2e": {
+      "tags": [],
+      "implicitDependencies": ["demos"]
+    },
+    "docs": {
+      "tags": ["type:app"]
+    },
+    "ssr": {
+      "tags": []
+    },
+    "ssr-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ssr"]
     },
     "state": {
       "tags": ["type:lib"]
@@ -81,8 +88,8 @@
       "tags": ["type:lib", "type:template"],
       "implicitDependencies": ["cdk-zone-less", "cdk-zone-configurations"]
     },
-    "docs": {
-      "tags": ["type:app"]
+    "test-helpers": {
+      "tags": ["type:util"]
     },
     "tour-of-heroes-ngxs": {
       "tags": ["type:app"]
@@ -93,16 +100,17 @@
     "vanilla-case-studies-e2e": {
       "tags": [],
       "implicitDependencies": ["vanilla-case-studies"]
-    },
-    "ssr": {
-      "tags": []
-    },
-    "ssr-e2e": {
-      "tags": [],
-      "implicitDependencies": ["ssr"]
     }
   },
   "affected": {
     "defaultBase": "master"
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
   }
 }
