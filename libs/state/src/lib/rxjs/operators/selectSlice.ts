@@ -1,6 +1,6 @@
-import { KeyCompareMap } from '../interfaces';
 import { Observable, OperatorFunction } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
+import { KeyCompareMap, PickSlice } from '../interfaces';
 import { distinctUntilSomeChanged } from './distinctUntilSomeChanged';
 
 /**
@@ -119,5 +119,3 @@ export function selectSlice<T extends object, K extends keyof T>(
     );
 }
 
-type PickSlice<T extends object, K extends keyof T> = Pick<T,
-  { [I in K]: I }[K]>;
