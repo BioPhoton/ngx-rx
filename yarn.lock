@@ -1996,6 +1996,18 @@
     strip-json-comments "^3.1.1"
     tslib "^2.0.0"
 
+"@nrwl/devkit@12.6.0":
+  version "12.6.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-12.6.0.tgz#a2bdd4c144f05597302580bcf31443abdd9dc6be"
+  integrity sha512-tvw/4n2JD/38UuzdxFCoj1+x02BAKK4EvtLhwUK5XSBF0wDYFBp5rHfxvUD9ZcoiRRrZA4QGFjhDljrfj95F2A==
+  dependencies:
+    "@nrwl/tao" "12.6.0"
+    ejs "^3.1.5"
+    ignore "^5.0.4"
+    rxjs "^6.5.4"
+    semver "7.3.4"
+    tslib "^2.0.0"
+
 "@nrwl/eslint-plugin-nx@12.3.4":
   version "12.3.4"
   resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-12.3.4.tgz#cc7d360e0879f3f940bcf82810b5c4aea9622db9"
@@ -2045,6 +2057,17 @@
   integrity sha512-6YhjlDZFb2dk0kphdLUELj99bAhG/So+CO1E8/eJsTvK4Mf7LySaTamabR9meSJW7yu2WKxiIIm4Z69IBI1bNQ==
   dependencies:
     "@nrwl/devkit" "12.3.5"
+    glob "7.1.4"
+    minimatch "3.0.4"
+    tmp "~0.2.1"
+    tslib "^2.0.0"
+
+"@nrwl/linter@12.6.0":
+  version "12.6.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-12.6.0.tgz#b102b481a166a9ead4a1df1a05bcaa81305f31ab"
+  integrity sha512-qOk6tOUqwLNYmeNNLFUgnbEr+v2G9VqZUBUWpVWT8PR78Rd0vI2AJDkE/VrjPKIfHzbXraKTuWcwTCijX8324w==
+  dependencies:
+    "@nrwl/devkit" "12.6.0"
     glob "7.1.4"
     minimatch "3.0.4"
     tmp "~0.2.1"
@@ -2104,6 +2127,22 @@
     rxjs-for-await "0.0.2"
     semver "7.3.4"
     strip-json-comments "^3.1.1"
+    tmp "~0.2.1"
+    tslib "^2.0.0"
+    yargs-parser "20.0.0"
+
+"@nrwl/tao@12.6.0":
+  version "12.6.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-12.6.0.tgz#b0ef91cbc0a8b7747407d1f25b0be669d9a8ddc7"
+  integrity sha512-h6X+mqmTlZjA9nqlyPAu9TFNORHAMcC1BD8H8kA8lTHN1nktLHQ266qpHVLsxcqww2EYsVqQaKaOpUacck49+w==
+  dependencies:
+    chalk "4.1.0"
+    enquirer "~2.3.6"
+    fs-extra "^9.1.0"
+    jsonc-parser "3.0.0"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    semver "7.3.4"
     tmp "~0.2.1"
     tslib "^2.0.0"
     yargs-parser "20.0.0"
@@ -9195,7 +9234,6 @@ minipass-fetch@^1.3.0, minipass-fetch@^1.3.2:
   resolved "https://registry.yarnpkg.com/minipass-fetch/-/minipass-fetch-1.3.3.tgz#34c7cea038c817a8658461bf35174551dce17a0a"
   integrity sha512-akCrLDWfbdAWkMLBxJEeWTdNsjML+dt5YgOI4gJ53vuO0vrmYQkUPxa6j6V65s9CcePIr2SSWqjT2EcrNseryQ==
   dependencies:
-    encoding "^0.1.12"
     minipass "^3.1.0"
     minipass-sized "^1.0.3"
     minizlib "^2.0.0"
