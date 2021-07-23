@@ -95,7 +95,7 @@
     "@nrwl/node": "12.3.5",
     "@nrwl/tao": "12.3.4",
     "@nrwl/workspace": "12.3.4",
-    "@types/benchmark": "^2.1.0",
+    "@types/benchmark": "^2.1.1",
     "@types/jest": "26.0.20",
     "@types/klaw-sync": "^6.0.0",
     "@types/node": "~15.3.0",
